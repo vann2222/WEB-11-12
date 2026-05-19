@@ -1,11 +1,352 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zendo</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZANDO Official Website</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="zendo.css">
 </head>
 <body>
-    
+
+<!-- TOP PROMO BAR -->
+<div class="promo-bar">🛒 Shop US$40 &amp; Get Free Delivery!</div>
+
+<!-- HEADER -->
+<header>
+  <div class="header-top">
+    <a href="#" class="logo">
+      <div class="logo-text">ZANDO</div>
+    </a>
+
+    <nav>
+      <div class="nav-inner">
+        <a href="#" class="sale">Sale 30–70% Off</a>
+        <a href="#">New Arrival</a>
+        <a href="#">Women</a>
+        <a href="#">Men</a>
+        <a href="#">Kids</a>
+        <a href="#">Footwear</a>
+        <a href="#">Accessories</a>
+        <a href="#">Brands</a>
+        <a href="#">Under $9.99</a>
+      </div>
+    </nav>
+
+    <div class="header-icons">
+      <button onclick="document.querySelector('.search-overlay').classList.add('open')" title="Search">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+      </button>
+      <a href="#" title="Wishlist">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+        </svg>
+      </a>
+      <a href="#" title="Cart" style="position:relative;">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <path d="M16 10a4 4 0 0 1-8 0"/>
+        </svg>
+        <span class="cart-badge">0</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO SLIDER -->
+<section class="hero" id="hero">
+  <div class="hero-slides" id="heroSlides">
+    <!-- Slide 1 -->
+    <div class="hero-slide" style="background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);">
+      <img src="https://zandokh.com/image/catalog/ZANDO%202026/Hero%20banner/1.jpg"
+           onerror="this.style.display='none'; this.parentElement.style.background='linear-gradient(135deg,#1a1a1a,#3a3a3a)'"
+           alt="Hero 1">
+      <div class="slide-overlay">
+        <div class="slide-label">Online Exclusive</div>
+        <div class="slide-title">SALE<br><span>30–70%</span><br>OFF</div>
+        <a href="#" class="slide-cta">Shop Now</a>
+      </div>
+    </div>
+    <!-- Slide 2 -->
+    <div class="hero-slide" style="background: linear-gradient(135deg, #2a1a1a 0%, #3a2020 100%);">
+      <img src="https://zandokh.com/image/catalog/ZANDO%202026/kkkk/%20%209.jpg"
+           onerror="this.style.display='none'; this.parentElement.style.background='linear-gradient(135deg,#2a1a1a,#3a2020)'"
+           alt="Hero 2">
+      <div class="slide-overlay">
+        <div class="slide-label">New Season</div>
+        <div class="slide-title">NEW<br>ARRIVAL</div>
+        <a href="#" class="slide-cta">Discover</a>
+      </div>
+    </div>
+    <!-- Slide 3 -->
+    <div class="hero-slide" style="background: linear-gradient(135deg, #0d1a2a 0%, #1a2a3a 100%);">
+      <img src="https://zandokh.com/image/catalog/ZANDO%202026/kkkk/4.jpg"
+           onerror="this.style.display='none'; this.parentElement.style.background='linear-gradient(135deg,#0d1a2a,#1a2a3a)'"
+           alt="Hero 3">
+      <div class="slide-overlay">
+        <div class="slide-label">Best Value</div>
+        <div class="slide-title">UNDER<br><span>$9.99</span></div>
+        <a href="#" class="slide-cta">Shop Now</a>
+      </div>
+    </div>
+    <!-- Slide 4 -->
+    <div class="hero-slide" style="background: linear-gradient(135deg, #1a1a1a 0%, #111 100%);">
+      <img src="https://zandokh.com/image/catalog/ZANDO%202026/kkkk/5.jpg"
+           onerror="this.style.display='none'; this.parentElement.style.background='linear-gradient(135deg,#111,#1a1a1a)'"
+           alt="Hero 4">
+      <div class="slide-overlay">
+        <div class="slide-label">Footwear</div>
+        <div class="slide-title">STEP<br>UP<br><span>YOUR</span><br>STYLE</div>
+        <a href="#" class="slide-cta">Shop Footwear</a>
+      </div>
+    </div>
+  </div>
+
+  <button class="slider-btn prev" onclick="slideHero(-1)" aria-label="Previous">&#8249;</button>
+  <button class="slider-btn next" onclick="slideHero(1)" aria-label="Next">&#8250;</button>
+  <div class="slider-dots" id="dots">
+    <button class="dot active" onclick="goToSlide(0)"></button>
+    <button class="dot" onclick="goToSlide(1)"></button>
+    <button class="dot" onclick="goToSlide(2)"></button>
+    <button class="dot" onclick="goToSlide(3)"></button>
+  </div>
+</section>
+
+<!-- CATEGORY GRID -->
+<section class="cat-section">
+  <div class="section-header">
+    <h2 class="cat-section-title">Shop By Category</h2>
+    <a href="#" class="view-all">View All</a>
+  </div>
+  <div class="cat-grid">
+    <div class="cat-card">
+      <div class="img-placeholder" style="background: #e8e0d5;">WOMEN</div>
+      <div class="cat-label">
+        <div class="cat-label-name">Women</div>
+        <div class="cat-label-sub">Clothing &amp; More</div>
+      </div>
+    </div>
+    <div class="cat-card">
+      <div class="img-placeholder" style="background: #d5dde8;">MEN</div>
+      <div class="cat-label">
+        <div class="cat-label-name">Men</div>
+        <div class="cat-label-sub">Clothing &amp; More</div>
+      </div>
+    </div>
+    <div class="cat-card">
+      <div class="img-placeholder" style="background: #e8e5d5;">KIDS</div>
+      <div class="cat-label">
+        <div class="cat-label-name">Kids</div>
+        <div class="cat-label-sub">Fun Styles</div>
+      </div>
+    </div>
+    <div class="cat-card">
+      <div class="img-placeholder" style="background: #d5e8d8;">FOOTWEAR</div>
+      <div class="cat-label">
+        <div class="cat-label-name">Footwear</div>
+        <div class="cat-label-sub">Shoes &amp; Sneakers</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROMO STRIP -->
+<div class="promo-strip">
+  <div class="promo-card">
+    <div class="img-placeholder" style="background: #e8002d; color: rgba(255,255,255,0.3);">SALE</div>
+    <div class="promo-label">
+      <div class="promo-label-name">SALE</div>
+      <div class="promo-label-sub">30–70% Off Everything</div>
+    </div>
+  </div>
+  <div class="promo-card">
+    <div class="img-placeholder" style="background: #1a1a1a; color: rgba(255,255,255,0.2);">NEW ARRIVAL</div>
+    <div class="promo-label">
+      <div class="promo-label-name">New Arrival</div>
+      <div class="promo-label-sub">Fresh Drops Daily</div>
+    </div>
+  </div>
+  <div class="promo-card">
+    <div class="img-placeholder" style="background: #2a4a2a; color: rgba(255,255,255,0.2);">UNDER $9.99</div>
+    <div class="promo-label">
+      <div class="promo-label-name">Under $9.99</div>
+      <div class="promo-label-sub">Best Value Picks</div>
+    </div>
+  </div>
+</div>
+
+<!-- SALE BANNER -->
+<a href="#" class="sale-banner">
+  <div>
+    <div class="sale-title">ONLINE EXCLUSIVE</div>
+    <div class="sale-sub">Up to 30–70% off — Limited Time Only</div>
+  </div>
+  <span class="sale-cta">Shop the Sale</span>
+</a>
+
+<!-- BRANDS -->
+<section class="brands-section">
+  <div class="brands-title">Our Brands</div>
+  <div class="brands-grid">
+    <div class="brand-pill">ZANDO</div>
+    <div class="brand-pill">TEN11</div>
+    <div class="brand-pill">ROUTINE</div>
+    <div class="brand-pill">GATONI</div>
+    <div class="brand-pill">361°</div>
+    <div class="brand-pill">SISBURMA</div>
+    <div class="brand-pill">POMELO</div>
+    <div class="brand-pill">TAG SPACE</div>
+    <div class="brand-pill">SLY</div>
+    <div class="brand-pill">BLACKORP</div>
+    <div class="brand-pill">SPOILED</div>
+    <div class="brand-pill">GIAN</div>
+    <div class="brand-pill">FNOS</div>
+    <div class="brand-pill">UNKRUSH</div>
+  </div>
+</section>
+
+<!-- PRODUCTS - NEW ARRIVALS -->
+<section class="products-section">
+  <div class="section-header">
+    <h2>New Arrivals</h2>
+    <a href="#" class="view-all">View All</a>
+  </div>
+  <div class="products-grid" id="productsGrid"></div>
+</section>
+
+<!-- STORE LOCATOR -->
+<div class="store-bar">
+  <div class="store-bar-left">
+    <h3>Find a ZANDO Store Near You</h3>
+    <p>Phnom Penh · Siem Reap · Sihanoukville · Takhmau &amp; More</p>
+  </div>
+  <button class="store-btn">Store Locator</button>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="logo-text">ZANDO</div>
+      <p>Cambodia's favourite multi-brand fashion destination. Clothes, shoes, accessories &amp; more — your fave brands, all in one place.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Shop</h4>
+      <ul>
+        <li><a href="#">New Arrivals</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Kids</a></li>
+        <li><a href="#">Footwear</a></li>
+        <li><a href="#">Accessories</a></li>
+        <li><a href="#">Sale</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Help</h4>
+      <ul>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Delivery Info</a></li>
+        <li><a href="#">Returns</a></li>
+        <li><a href="#">Track Order</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#">About ZANDO</a></li>
+        <li><a href="#">Store Locations</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms &amp; Conditions</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 ZANDO. All rights reserved.</span>
+    <div class="social-links">
+      <a href="#">FB</a>
+      <a href="#">IG</a>
+      <a href="#">TG</a>
+    </div>
+  </div>
+</footer>
+
+<!-- SEARCH OVERLAY -->
+<div class="search-overlay" id="searchOverlay" onclick="if(event.target===this)this.classList.remove('open')">
+  <div class="search-box">
+    <input type="text" placeholder="Search for brands, styles, products..." autofocus>
+    <button>Search</button>
+  </div>
+</div>
+
+<!-- SCROLL TO TOP -->
+<button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top">↑</button>
+
+<script>
+  // Hero Slider
+  let currentSlide = 0;
+  const totalSlides = 4;
+  const slidesEl = document.getElementById('heroSlides');
+  const dots = document.querySelectorAll('.dot');
+
+  function goToSlide(n) {
+    currentSlide = n;
+    slidesEl.style.transform = `translateX(-${n * 100}%)`;
+    dots.forEach((d, i) => d.classList.toggle('active', i === n));
+  }
+  function slideHero(dir) {
+    goToSlide((currentSlide + dir + totalSlides) % totalSlides);
+  }
+  setInterval(() => slideHero(1), 5000);
+
+  // Products Grid
+  const products = [
+    { brand: 'ZANDO', name: 'Relaxed Linen Shirt', price: '$24.99', original: '$39.99', discount: '-37%', bg: '#e8e0d5' },
+    { brand: 'TEN11', name: 'Classic White Tee', price: '$14.99', original: '$22.99', discount: '-35%', bg: '#dde5ec' },
+    { brand: 'ROUTINE', name: 'Slim Chino Pants', price: '$34.99', original: '$54.99', discount: '-36%', bg: '#e5e8d5' },
+    { brand: 'GATONI', name: 'Floral Summer Dress', price: '$29.99', original: '$49.99', discount: '-40%', bg: '#ecdde8' },
+    { brand: '361°', name: 'Running Sneakers', price: '$44.99', original: '$69.99', discount: '-36%', bg: '#d5e8e8' },
+    { brand: 'ZANDO', name: 'Denim Jacket Oversized', price: '$54.99', original: '$79.99', discount: '-31%', bg: '#d5dde8' },
+    { brand: 'SISBURMA', name: 'Knit Crop Top', price: '$18.99', original: '$29.99', discount: '-37%', bg: '#e8d5d5' },
+    { brand: 'POMELO', name: 'Wide-Leg Trousers', price: '$39.99', original: '$59.99', discount: '-33%', bg: '#e5dde8' },
+    { brand: 'TAG SPACE', name: 'Canvas Tote Bag', price: '$12.99', original: '$19.99', discount: '-35%', bg: '#e8e5d5' },
+    { brand: 'TEN11', name: 'Graphic Hoodie', price: '$49.99', original: '$75.99', discount: '-34%', bg: '#d8dde5' },
+  ];
+
+  const grid = document.getElementById('productsGrid');
+  products.forEach(p => {
+    grid.innerHTML += `
+      <div class="product-card">
+        <div class="product-img">
+          <div class="img-placeholder" style="background:${p.bg}; font-size:12px;">${p.brand}</div>
+          <div class="product-badge">${p.discount}</div>
+          <button class="wishlist-btn" title="Add to wishlist">♡</button>
+        </div>
+        <div class="product-brand">${p.brand}</div>
+        <div class="product-name">${p.name}</div>
+        <div class="product-price">
+          <span class="price-current">${p.price}</span>
+          <span class="price-original">${p.original}</span>
+          <span class="price-discount">${p.discount}</span>
+        </div>
+      </div>
+    `;
+  });
+
+  // Scroll to top
+  window.addEventListener('scroll', () => {
+    document.getElementById('scrollTop').classList.toggle('visible', window.scrollY > 400);
+  });
+
+  // Close search on Escape
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') document.querySelector('.search-overlay').classList.remove('open');
+  });
+</script>
 </body>
 </html>
