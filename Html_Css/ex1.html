@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            padding: 10%;
+        }
+        .parent {
+            width: 900px;
+            border: 3px solid #a77373;
+            padding: 10px;
+            background: white;   
+        }
+        .table {
+            display: grid;
+            grid-template-columns: 120px 350px 200px 1fr;
+            border: 2px solid #a77373;
+        }
+
+        .cell {
+            border: 1px solid #a77373;
+            padding: 12px;
+            font-size: 22px;
+        }
+        .header {
+            font-weight: bold;
+            text-align: center;
+            font-size: 28px;
+            border: 1px solid #a77373;
+            padding: 12px;
+            font-size: 22px;
+        }
+        .remark {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            grid-row: span 2;
+            font-size: 26px;
+            border: 1px solid #a77373;
+            padding: 12px;
+            font-size: 22px;
+        }
+        .total {
+            grid-column: span 3;
+            font-size: 28px;
+             border: 1px solid #a77373;
+            padding: 12px;
+            font-size: 22px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="parent">
+    <div class="table">
+        <div class=" header">No</div>
+        <div class=" header">Product</div>
+        <div class=" header">Price</div>
+        <div class=" header">Remark</div>
+        <div class="cell">1</div>
+        <div class="cell">Notebook</div>
+        <div class="cell">$3</div>
+        <div class=" remark">Available</div>
+        <div class="cell">2</div>
+        <div class="cell">Pen</div>
+        <div class="cell">$1</div>
+        <div class=" total">Total Products: 2</div>
+        <div class="cell"></div>
+    </div>
+</div>
+
+</body>
+</html>

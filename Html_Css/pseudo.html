@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .overflow{
+        width: 200px;
+        height: 200px;
+        background-color: pink;
+
+    }
+    .btn{
+        background-color: bisque;
+    }
+    .btn:active{
+        background-color: cyan;
+    }
+    .btn:hover{
+        background-color: chartreuse;
+    }
+    input:focus{
+        background-color: lightcoral;
+    }
+    a:visited{
+        color: rgb(177, 77, 10);
+    }
+
+    a:link{
+        color: rgb(113, 82, 168);
+        background-color: rgb(187, 187, 122);
+    }
+
+
+    h1:first-child{
+        color: chartreuse;
+    }
+    h1:last-child{
+        color: darksalmon;
+    }
+    h1:nth-child(3){
+        color: lightpink;
+    }
+    input:checked{
+        width: 300px;
+        height: 300px;
+        
+    }
+
+    .be::before{
+        content: "🤣❤️";
+    }
+    .be::after{
+        content: "💔❤️‍🩹";
+    }
+    .p1::first-letter{
+        font-size: 40px;
+        color: greenyellow;
+    }
+    .p1::after{
+        content: "🐉🦎";
+    }
+    /* first - line */
+    .text{
+        width: 300px;
+        height: 350px;
+        border: 3px solid pink;
+        overflow:auto;
+        margin: 50px;
+        padding: 10px;
+    }
+    .text-test::first-line{
+        color: darkgreen;
+        font-size: 30px; 
+    }
+    .text-test::selection{
+        background-color: peachpuff;
+        color: brown;
+    }
+    input::placeholder{
+        background-color: rgb(156, 187, 187);
+    }
+    
+
+</style>
+<body>
+    <div class="overflow">
+        <button class="btn">Click me</button>
+        <hr>
+        <input type="text" placeholder="Enter Username">
+    </div>
+
+    <!-- visite -->
+    <!-- link -->
+     <br>
+     <a href="https://web.facebook.com/eteccenter/?_rdc=1&_rdr#">Rupp University</a>
+
+     <!-- first childs, last child , nth-child(n) -->
+     <div>
+        <h1>This is first child</h1>
+        <h1>This is seconh child</h1>
+        <h1>This is Third child</h1>
+        <h1>This is forth child</h1>
+        <h1>This is last child</h1>
+     </div>
+
+     <!-- :checck -->
+      <input type="checkbox">
+
+      <!-- :disabled -->
+       <button disabled>Click me</button>
+       <select>
+        <option value="" disabled selected>Select Gender</option>
+        <option value="">Male</option>
+        <option value="">Female</option>
+        <option value="">Ktery</option>
+       </select>
+
+
+       <!-- before -->
+        <h1 class="be">Ke bork ha</h1>
+
+        <!-- first-letter -->
+         <p class="p1">Leak kanjiiiiiiiiiiiiiiiiiiii</p>
+
+         <!-- first-line -->
+          <div class="text">
+            <p class="text-test">Team Smos Srlanh ke🦛 tea mnk eg send pibak nak na klas yol ahronm mnk nis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo consequuntur corrupti illum, reiciendis, distinctio totam dolorem dolores ipsam quidem repudiandae laudantium unde explicabo itaque commodi similique ea ab qui? Animi.
+            Nostrum impedit et provident ullam consequatur quia dolore minima esse nemo odit, assumenda quos voluptatibus repudiandae. Beatae sunt explicabo, accusamus reprehenderit similique unde provident eligendi dignissimos iste dolorem deleniti nihil.
+            Nisi nobis cum inventore illum dolores cupiditate pariatur harum, quisquam maxime aspernatur modi quod libero sint molestias eveniet placeat totam similique veritatis minima saepe culpa vitae non et. Harum, illum!
+            Sapiente obcaecati nulla qui eveniet, delectus molestias nostrum cupiditate nam dignissimos commodi assumenda at voluptatum accusamus! Laboriosam, aut. Nostrum sunt a fuga culpa rerum molestiae cum ipsam? Dolorum, numquam dolores.
+            Voluptatibus suscipit veritatis illo enim quo. Quisquam accusantium nam blanditiis quam repellendus! Non suscipit similique alias, libero esse repellendus expedita facilis mollitia ab magnam praesentium, laborum omnis voluptatem quas nostrum.
+            Odit corrupti delectus officia ipsum repudiandae vel. Unde nulla illo exercitationem necessitatibus cum aut mollitia perspiciatis, commodi tenetur quae alias. Voluptas cumque in facilis nobis repellendus debitis deserunt, modi animi?</p>
+          </div>
+
+          <!-- placeholder -->
+           <input type="text" placeholder="Enter your pw heart🦟">
+</body>
+</html>

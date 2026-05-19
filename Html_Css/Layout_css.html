@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .t{
+        text-align: center;
+       
+       
+    }
+    /* <!-- width & height --> */
+    #test{
+        width: 200px;
+        height: 200px;
+        background-color: cadetblue;
+    }
+    #child{
+        width: 100%;
+        height: 70%;
+        background-color: rgb(222, 151, 135);
+    }
+    /* <!-- width & height "px & rem"--> */
+    #test1{
+        width: 64px;
+        height: 64px;
+        background-color: rgb(147, 56, 56);
+    }
+    #child1{
+        width: 4rem;
+        height: 64px;
+        background-color: rgb(164, 87, 87);
+    }
+    h1{
+        font-size: 10px;
+        color: #f1efef;
+        text-align: center;
+    }
+
+        #test2{
+        width: 64px;
+        height: 64px;
+        background-color: rgb(163, 113, 113);
+    }
+    #child2{
+        width: 4em;
+        height: 4rem;
+        background-color: rgb(81, 40, 40);
+    }
+
+    
+        #test3{
+        width: 120px;
+        height: 64px;
+        background-color: rgb(224, 91, 91);
+    }
+    #child3{
+        width: 4em;
+        height: 4rem;
+        background-color: rgb(81, 40, 40);
+    }
+</style>
+<body>
+    <!-- width & height "% & px"-->
+     <div class="t">
+        <div id="test">
+            <h1>Use px</h1>
+            <div id="child">
+                <h1>Use %</h1>
+            </div>
+        </div>
+        
+        <!-- width & height "px & rem"-->
+        <div id="test1">
+            <h1>Use rem</h1>
+        </div>
+         <div id="child1">
+                <h1>Use px</h1>
+         </div>
+
+         <div id="test2">
+            <h1>1rem=16px</h1>
+        </div>
+         <div id="child2">
+                <h1>4em=64px</h1>
+         </div>
+
+          <div id="test3">
+            <h1>1em=30px</h1>
+        </div>
+         <div id="child3">
+                <h1>4em=120px</h1>
+         </div>
+         
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .parent{
+       border: 1px solid rebeccapurple;
+        margin: auto;
+        background-color: bisque;
+        width: 300px;
+        height: 300px;
+        position: relative;
+    }
+    .child{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 2px solid black;
+        position: absolute;
+        overflow: hidden;
+        animation: test 5s ease-in-out infinite;
+        background-color: burlywood;
+    }
+    @keyframes test {
+        0%{
+            top:0;
+            left: 0;
+        }
+        25%{
+            top: 0;
+            left: calc(100% - 100px);
+        }
+        50%{
+            top: calc(100% - 100px);
+            left: calc(100% - 100px);
+        }
+        75%{
+            top: calc(100% - 100px);
+            left: 0;
+        }
+        100%{
+            top: 0;
+            left: 0;
+        }
+    }
+</style>
+<body>
+    <div class="parent">
+        <div class="child">
+            <img style="width: 100%; height: 100%;" src="https://i.pinimg.com/control1/736x/ce/47/9f/ce479f9204bbf712c2f888b68f675dcc.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>

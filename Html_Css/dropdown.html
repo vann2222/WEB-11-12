@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        padding: 50px;
+    }
+
+    .parent{
+        width: 200px;
+        margin: auto;
+        
+    }
+    .btn{
+        width: 200px;
+        height: 30px;
+        background-color: blue;
+    }
+    .parent:hover .container{
+        height: 100px;
+        
+       
+    }
+    .container{
+       width: 100%;
+       height: 0;
+       background-color: antiquewhite;
+       overflow: hidden;
+       transition: all 0.5s ease-in-out;
+       
+    }
+    a{
+        text-decoration: none;  
+        margin-top: 20px;
+    }
+</style>
+<body>
+    <div class="parent">
+        <button class="btn">Select Option</button>
+        <div class="container">
+            <a href="">tik tok</a><br>
+            <a href="">facebook</a><br>
+            <a href="">chat</a><br>
+            <a href="">telegram</a>
+        </div>
+    </div>
+</body>
+</html>

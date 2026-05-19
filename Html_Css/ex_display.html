@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+    }
+    .parent{
+        width: 800px;
+        height: 430px;
+        border: 1px solid black;
+        margin: auto;
+        margin-top: 50px;
+        padding: 2px;
+    }
+    .child1,.child2,.h1,.h2,.h3,.child4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .child1{
+       width: 100%;
+       height: 80px;
+       background-color: rgb(241, 195, 175);
+      margin: 2px;
+    }
+     .child2{
+        width: 100%;
+        height: 80px;
+        background-color: rgb(217, 227, 160);
+        margin: 2px;
+    }
+     .child3{
+        width: 100%;
+        height: 100px;
+        margin: 2px;
+        display: flex;
+       
+    }   
+   .flex{
+        width: 70%;
+        height: 100px;
+       margin: 2px;
+     }
+      .h1{
+        width: 30%;
+        height: 163px;
+        background-color: aqua;
+     }
+     .h2{
+        width: 100%;
+        height: 80px;
+        background-color: bisque;   
+     }
+     .h3{
+        width: 100%;
+        height: 80px;
+        background-color: rgb(186, 114, 31);
+        margin: 2px;
+     }     
+     .child4{
+        width: 100%;
+        height:80px;   
+        background-color: rgb(92, 53, 6);
+        margin-top: 68px;
+        
+    }
+</style>
+<body>
+    <div class="parent">
+        <div class="child1"><h4>Header</h4></div>
+        <div class="child2"><h4>Navigate</h4></div>
+        <div class="child3">
+            <div class="h1"><h4>Aside</h4></div>           
+            <div class="flex">
+                <div class="h2"><h4>Content</h4></div>
+                <div class="h3"><h4>select</h4> </div>
+            </div>          
+        </div>
+        <div class="child4"><h4>footer</h4></div>
+    </div>
+</body>
+</html>

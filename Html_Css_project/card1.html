@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Property Card</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    width: 420px;
+    height: 570px;
+    background: white;
+    border-radius: 25px;
+    padding: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+.image {
+    position: relative;
+    height: 250px;
+    background: url('https://images.unsplash.com/photo-1564013799919-ab600027ffc6') center/cover;
+    border-radius: 20px;
+}
+
+.prime-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: white;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.dots {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 6px;
+}
+
+.dots span {
+    width: 10px;
+    height: 10px;
+    background: rgba(255,255,255,0.7);
+    border-radius: 50%;
+}
+
+.content {
+    padding: 18px 8px;
+}
+
+.price {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.price .price {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.price .label {
+    color: gray;
+    font-size: 15px;
+}
+
+.info {
+    margin-top: 10px;
+    display: flex;
+    gap: 3px;
+}
+
+.agent-name {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.address {
+    color: gray;
+    margin-top: 4px;
+}
+
+.features{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 18px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.feature {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+}
+
+.feature i {
+    color: #555;
+    font-size: 18px;
+}
+.divider {
+    width: 1px;
+    background: #ddd;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.author {
+    color: gray;
+}
+
+.date {
+    color: gray;
+}
+
+button {
+    width: 100%;
+    padding: 18px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(to bottom, #444, #111);
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+</style>
+</head>
+<body>
+
+<div class="card">
+
+    <div class="image">
+        <div class="prime-badge">⭐ Prime Pick</div>
+
+        <div class="dots">
+            <span></span>
+            <span></span>
+            <span></span>           
+        </div>
+    </div>
+
+    <div class="content">
+
+        <div class="price">
+            <span class="price">$250,000</span>
+            <span class="label">List price</span>
+        </div>
+
+        <div class="info">
+            <div class="agent-name">Guillaume Briard .</div>
+            <div class="address">Harry Konigsberg's, 1063 AG</div>
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <i class="fa-solid fa-expand"></i>
+               <strong> 29m² </strong>Living
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="feature">
+                <i class="fa-solid fa-house"></i>
+                2 Rooms
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="author">By <strong under-line=" ">
+                <a style="color: black;" href="">.Waleed Sabir</a></strong></div>
+            <div class="date">2 days ago</div>
+        </div>
+
+        <button>View Details</button>
+
+    </div>
+
+</div>
+
+</body>
+</html>
